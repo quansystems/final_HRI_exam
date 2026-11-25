@@ -1,0 +1,73 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+  - Class: rviz_common/Views
+    Name: Views
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Grid
+      Enabled: true
+      Cell Size: 0.055
+      Plane Cell Count: 20
+      Reference Frame: <Fixed Frame>
+      Color: 150; 150; 150
+    - Class: rviz_default_plugins/RobotModel
+      Name: Robot
+      Enabled: true
+      Description Source: Topic
+      Description Topic:
+        Value: /robot_description
+        Depth: 1
+        Reliability Policy: Reliable
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+      Visual Enabled: true
+      Collision Enabled: false
+      Alpha: 0.65
+    - Class: rviz_default_plugins/MarkerArray
+      Name: Board perception
+      Enabled: true
+      Topic:
+        Value: /board_markers
+        Depth: 1
+        Reliability Policy: Reliable
+        Durability Policy: Transient Local
+        History Policy: Keep Last
+    - Class: rviz_default_plugins/Image
+      Name: Overhead camera
+      Enabled: true
+      Topic:
+        Value: /depth_camera/image
+        Depth: 1
+        Reliability Policy: Best Effort
+        Durability Policy: Volatile
+        History Policy: Keep Last
+      Transport Hint: raw
+  Enabled: true
+  Global Options:
+    Fixed Frame: gazebo_world
+    Background Color: 170; 180; 190
+    Frame Rate: 30
+  Tools:
+    - Class: rviz_default_plugins/Interact
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+  Transformation:
+    Current:
+      Class: rviz_default_plugins/TF
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 0.85
+      Pitch: 1.15
+      Yaw: 1.57
+      Focal Point:
+        X: 0
+        Y: 0
+        Z: 0.806
+      Target Frame: gazebo_world
+Window Geometry:
+  Width: 1400
+  Height: 900

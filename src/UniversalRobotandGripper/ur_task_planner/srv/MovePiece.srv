@@ -1,0 +1,7 @@
+string color
+string source
+string destination
+---
+bool accepted
+string status
+string message

@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>ur_task_planner</name>
+  <version>0.0.0</version>
+  <description>TODO: Package description</description>
+  <maintainer email="tngocsang779@gmail.com">ngocsang</maintainer>
+  <license>TODO: License declaration</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>rosidl_default_generators</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>moveit_ros_planning_interface</depend>
+  <depend>control_msgs</depend>
+  <depend>rclcpp_action</depend>
+  <depend>moveit_msgs</depend>
+  <depend>shape_msgs</depend>
+
+  <exec_depend>rosidl_default_runtime</exec_depend>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>camera_detection</exec_depend>
+  <exec_depend>infomation_communication</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>visualization_msgs</exec_depend>
+  <exec_depend>cv_bridge</exec_depend>
+  <exec_depend>message_filters</exec_depend>
+  <exec_depend>tf2_ros</exec_depend>
+  <exec_depend>python3-numpy</exec_depend>
+  <exec_depend>python3-opencv</exec_depend>
+  <exec_depend>ament_index_python</exec_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>python3-yaml</exec_depend>
+  <exec_depend>xacro</exec_depend>
+  <exec_depend>ur_onrobot</exec_depend>
+  <exec_depend>ur_simulation_gz</exec_depend>
+  <exec_depend>ur_moveit_config</exec_depend>
+  <exec_depend>moveit_ros_move_group</exec_depend>
+  <exec_depend>moveit_kinematics</exec_depend>
+  <exec_depend>moveit_planners_ompl</exec_depend>
+  <exec_depend>moveit_simple_controller_manager</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+
+  <member_of_group>rosidl_interface_packages</member_of_group>
+
+  <test_depend>ament_cmake_gtest</test_depend>
+  <test_depend>ament_cmake_pytest</test_depend>
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

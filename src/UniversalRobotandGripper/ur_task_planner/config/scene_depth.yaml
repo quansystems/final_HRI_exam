@@ -1,0 +1,395 @@
+/**:
+  ros__parameters:
+    robot_base_position:
+    - -0.35
+    - 0.0
+    - 0.81
+    use_perception: true
+    board_enabled: true
+    reliable_camera: true
+    board_center:
+    - 0.0
+    - 0.0
+    board_cell_size: 0.055
+    board_surface_z: 0.806
+    board_piece_size: 0.04
+    board_rows:
+    - A
+    - B
+    - C
+    board_columns:
+    - '1'
+    - '2'
+    - '3'
+    table_surface_z: 0.8
+    table_placement_bounds:
+    - -0.25
+    - 0.2
+    - -0.34
+    - 0.34
+    placement_gap: 0.015
+    robot_keepout_radius: 0.12
+    placement_max_reach: 0.56
+    observation_timeout_sec: 5.0
+    object_names:
+    - red_1
+    - red_2
+    - red_3
+    - red_4
+    - yellow_1
+    - yellow_2
+    - yellow_3
+    - yellow_4
+    zone_names:
+    - A1
+    - A2
+    - A3
+    - B1
+    - B2
+    - B3
+    - C1
+    - C2
+    - C3
+    - D1
+    - D2
+    - D3
+    - D4
+    - D5
+    - D6
+    - D7
+    - D8
+    obstacle_names:
+    - table
+    - board
+    - staging_row
+    - depth_camera
+    objects:
+      red_1:
+        position:
+        - -0.17
+        - 0.1925
+        - 0.826
+        yaw: 0.0
+        size:
+        - 0.04
+        - 0.04
+        - 0.04
+        color:
+        - 1.0
+        - 0.0
+        - 0.0
+        description: quân đỏ 1
+      yellow_1:
+        position:
+        - -0.17
+        - -0.0275
+        - 0.826
+        yaw: 0.0
+        size:
+        - 0.04
+        - 0.04
+        - 0.04
+        color:
+        - 1.0
+        - 1.0
+        - 0.0
+        description: quân vàng 1
+      red_2:
+        position:
+        - -0.17
+        - 0.1375
+        - 0.826
+        yaw: 0.0
+        size:
+        - 0.04
+        - 0.04
+        - 0.04
+        color:
+        - 1.0
+        - 0.0
+        - 0.0
+        description: quân đỏ 2
+      yellow_2:
+        position:
+        - -0.17
+        - -0.0825
+        - 0.826
+        yaw: 0.0
+        size:
+        - 0.04
+        - 0.04
+        - 0.04
+        color:
+        - 1.0
+        - 1.0
+        - 0.0
+        description: quân vàng 2
+      red_3:
+        position:
+        - -0.17
+        - 0.0825
+        - 0.826
+        yaw: 0.0
+        size:
+        - 0.04
+        - 0.04
+        - 0.04
+        color:
+        - 1.0
+        - 0.0
+        - 0.0
+        description: quân đỏ 3
+      yellow_3:
+        position:
+        - -0.17
+        - -0.1375
+        - 0.826
+        yaw: 0.0
+        size:
+        - 0.04
+        - 0.04
+        - 0.04
+        color:
+        - 1.0
+        - 1.0
+        - 0.0
+        description: quân vàng 3
+      red_4:
+        position:
+        - -0.17
+        - 0.0275
+        - 0.826
+        yaw: 0.0
+        size:
+        - 0.04
+        - 0.04
+        - 0.04
+        color:
+        - 1.0
+        - 0.0
+        - 0.0
+        description: quân đỏ 4
+      yellow_4:
+        position:
+        - -0.17
+        - -0.1925
+        - 0.826
+        yaw: 0.0
+        size:
+        - 0.04
+        - 0.04
+        - 0.04
+        color:
+        - 1.0
+        - 1.0
+        - 0.0
+        description: quân vàng 4
+    zones:
+      A1:
+        position:
+        - -0.055
+        - 0.055
+        - 0.806
+        size:
+        - 0.055
+        - 0.055
+        description: ô A1, hàng A, cột 1
+      A2:
+        position:
+        - 0.0
+        - 0.055
+        - 0.806
+        size:
+        - 0.055
+        - 0.055
+        description: ô A2, hàng A, cột 2
+      A3:
+        position:
+        - 0.055
+        - 0.055
+        - 0.806
+        size:
+        - 0.055
+        - 0.055
+        description: ô A3, hàng A, cột 3
+      B1:
+        position:
+        - -0.055
+        - 0.0
+        - 0.806
+        size:
+        - 0.055
+        - 0.055
+        description: ô B1, hàng B, cột 1
+      B2:
+        position:
+        - 0.0
+        - 0.0
+        - 0.806
+        size:
+        - 0.055
+        - 0.055
+        description: ô B2, hàng B, cột 2
+      B3:
+        position:
+        - 0.055
+        - 0.0
+        - 0.806
+        size:
+        - 0.055
+        - 0.055
+        description: ô B3, hàng B, cột 3
+      C1:
+        position:
+        - -0.055
+        - -0.055
+        - 0.806
+        size:
+        - 0.055
+        - 0.055
+        description: ô C1, hàng C, cột 1
+      C2:
+        position:
+        - 0.0
+        - -0.055
+        - 0.806
+        size:
+        - 0.055
+        - 0.055
+        description: ô C2, hàng C, cột 2
+      C3:
+        position:
+        - 0.055
+        - -0.055
+        - 0.806
+        size:
+        - 0.055
+        - 0.055
+        description: ô C3, hàng C, cột 3
+      D1:
+        position:
+        - -0.17
+        - 0.1925
+        - 0.806
+        size:
+        - 0.055
+        - 0.055
+        description: vị trí khởi tạo D1
+      D2:
+        position:
+        - -0.17
+        - 0.1375
+        - 0.806
+        size:
+        - 0.055
+        - 0.055
+        description: vị trí khởi tạo D2
+      D3:
+        position:
+        - -0.17
+        - 0.0825
+        - 0.806
+        size:
+        - 0.055
+        - 0.055
+        description: vị trí khởi tạo D3
+      D4:
+        position:
+        - -0.17
+        - 0.0275
+        - 0.806
+        size:
+        - 0.055
+        - 0.055
+        description: vị trí khởi tạo D4
+      D5:
+        position:
+        - -0.17
+        - -0.0275
+        - 0.806
+        size:
+        - 0.055
+        - 0.055
+        description: vị trí khởi tạo D5
+      D6:
+        position:
+        - -0.17
+        - -0.0825
+        - 0.806
+        size:
+        - 0.055
+        - 0.055
+        description: vị trí khởi tạo D6
+      D7:
+        position:
+        - -0.17
+        - -0.1375
+        - 0.806
+        size:
+        - 0.055
+        - 0.055
+        description: vị trí khởi tạo D7
+      D8:
+        position:
+        - -0.17
+        - -0.1925
+        - 0.806
+        size:
+        - 0.055
+        - 0.055
+        description: vị trí khởi tạo D8
+    obstacles:
+      table:
+        position:
+        - 0.0
+        - 0.0
+        - 0.4
+        size:
+        - 1.0
+        - 0.8
+        - 0.8
+      board:
+        position:
+        - 0.0
+        - 0.0
+        - 0.803
+        size:
+        - 0.225
+        - 0.225
+        - 0.006
+      staging_row:
+        position:
+        - -0.17
+        - 0.0
+        - 0.803
+        size:
+        - 0.08
+        - 0.45
+        - 0.006
+      depth_camera:
+        # Padded collision box around camera_body_collision in ur_table_depth.sdf.
+        position: [-0.07, 0.0, 2.23]
+        size: [0.14, 0.06, 0.08]
+    tcp_offset: 0.2
+    approach_distance: 0.1
+    zone_pick_approach_distance: 0.08
+    place_approach_distance: 0.08
+    place_clearance: 0.003
+    collision_margin: 0.001
+    gripper_open_position: 0.0
+    gripper_approach_position: 0.023
+    gripper_grasp_position: 0.027
+    gripper_closed_position: 0.04
+    verify_grasp: true
+    arm_velocity_scaling: 0.3
+    arm_acceleration_scaling: 0.3
+    cartesian_speed_scaling: 0.2
+    cartesian_jump_threshold: 5.0
+    staging_enabled: true
+    staging_first_position:
+    - -0.17
+    - 0.1925
+    staging_spacing: 0.055
+    staging_direction:
+    - 0.0
+    - -1.0
