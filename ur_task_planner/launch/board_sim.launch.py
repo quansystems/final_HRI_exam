@@ -29,7 +29,7 @@ def generate_launch_description():
         Node(package='camera_detection', executable='camera_detection_node.py', output='screen',
              parameters=[PathJoinSubstitution([package, 'config', 'scene_depth.yaml']),
                          {'use_sim_time': True}]),
-        Node(package='infomation_communication', executable='information_receiver_node.py',
+        Node(package='information_communication', executable='information_receiver_node.py',
              output='screen', parameters=[{'use_sim_time': True}]),
         Node(package='rviz2', executable='rviz2', name='board_rviz',
              condition=IfCondition(LaunchConfiguration('launch_rviz')),

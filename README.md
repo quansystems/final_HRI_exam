@@ -8,8 +8,9 @@ Chạy mô phỏng và nhận diện không cần API key.
 - `ur_description`: mô hình, meshes và thông số robot UR.
 - `ur_onrobot`: mô hình UR3e gắn kẹp RG2 và controller.
 - `ur_simulation_gz`: bàn, bàn cờ, 8 quân, camera RGB-D và bridge Gazebo–ROS.
-- `infomation_communication`: nhận `/position_state`, kiểm tra dữ liệu và phát `/information_state`.
+- [`information_communication`](information_communication/README.md) phát trạng thái bàn cờ qua `/information_state` và gửi cờ webcam đến máy B qua `/mutual_communication`.
 - `camera_detection`: nhận diện 17 vị trí và theo dõi 8 quân từ RGB-D.
+- [`detection_behaviour`](detection_behaviour/README.md) nhận diện hai biểu cảm và cử chỉ xòe hai tay từ webcam.
 - `ur_task_planner`: nhận lệnh chuyển quân, thực thi qua MoveIt và phát thông báo.
 
 ## Bố cục bàn cờ
@@ -129,6 +130,8 @@ phải được kiểm tra khi có che khuất/mất camera.
 RViz hiển thị ảnh camera và markers cho cả bàn cờ lẫn hàng D.
 
 ## Xem trên máy B qua Discovery Server
+
+Để nhận trạng thái vui vẻ, tức giận và hai tay xòe, xem [hướng dẫn truyền giữa hai máy](information_communication/README.md#truyền-giữa-máy-a-và-máy-b).
 
 Máy B cần cùng các package mô hình và bản build dự án để mở cấu hình RViz mới.
 Dùng IP Wi-Fi hiện tại của máy A; ví dụ đã kiểm tra kết nối: `10.11.84.48`.

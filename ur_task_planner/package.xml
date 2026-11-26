@@ -22,7 +22,7 @@
   <exec_depend>rosidl_default_runtime</exec_depend>
   <exec_depend>rclpy</exec_depend>
   <exec_depend>camera_detection</exec_depend>
-  <exec_depend>infomation_communication</exec_depend>
+  <exec_depend>information_communication</exec_depend>
   <exec_depend>sensor_msgs</exec_depend>
   <exec_depend>visualization_msgs</exec_depend>
   <exec_depend>cv_bridge</exec_depend>
